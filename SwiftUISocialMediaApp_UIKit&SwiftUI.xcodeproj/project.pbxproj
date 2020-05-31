@@ -22,6 +22,7 @@
 		614AE3A32484132E0065F226 /* MewsAuthorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3A22484132E0065F226 /* MewsAuthorView.swift */; };
 		614AE3A5248417A80065F226 /* MewsRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3A4248417A80065F226 /* MewsRow.swift */; };
 		614AE3A924841BA70065F226 /* MewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3A824841BA70065F226 /* MewsListView.swift */; };
+		614AE3AC248420930065F226 /* MewsChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3AB248420930065F226 /* MewsChatRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		614AE3A22484132E0065F226 /* MewsAuthorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsAuthorView.swift; sourceTree = "<group>"; };
 		614AE3A4248417A80065F226 /* MewsRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsRow.swift; sourceTree = "<group>"; };
 		614AE3A824841BA70065F226 /* MewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsListView.swift; sourceTree = "<group>"; };
+		614AE3AB248420930065F226 /* MewsChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsChatRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 		614AE3A0248412FB0065F226 /* Mews */ = {
 			isa = PBXGroup;
 			children = (
+				614AE3AA24841E610065F226 /* Detail */,
 				614AE3A12484130E0065F226 /* Master */,
 			);
 			path = Mews;
@@ -132,6 +135,14 @@
 				614AE3A824841BA70065F226 /* MewsListView.swift */,
 			);
 			path = Master;
+			sourceTree = "<group>";
+		};
+		614AE3AA24841E610065F226 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				614AE3AB248420930065F226 /* MewsChatRow.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,6 +227,7 @@
 				614AE3A924841BA70065F226 /* MewsListView.swift in Sources */,
 				614AE3A32484132E0065F226 /* MewsAuthorView.swift in Sources */,
 				614AE3992483F8070065F226 /* Date+Extensions.swift in Sources */,
+				614AE3AC248420930065F226 /* MewsChatRow.swift in Sources */,
 				614AE39B2483F8800065F226 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
