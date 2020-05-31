@@ -24,6 +24,7 @@
 		614AE3A924841BA70065F226 /* MewsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3A824841BA70065F226 /* MewsListView.swift */; };
 		614AE3AC248420930065F226 /* MewsChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3AB248420930065F226 /* MewsChatRow.swift */; };
 		614AE3AE24842E490065F226 /* MewsChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3AD24842E490065F226 /* MewsChatView.swift */; };
+		614AE3B02484312F0065F226 /* MewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3AF2484312F0065F226 /* MewsDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		614AE3A824841BA70065F226 /* MewsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsListView.swift; sourceTree = "<group>"; };
 		614AE3AB248420930065F226 /* MewsChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsChatRow.swift; sourceTree = "<group>"; };
 		614AE3AD24842E490065F226 /* MewsChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsChatView.swift; sourceTree = "<group>"; };
+		614AE3AF2484312F0065F226 /* MewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 			children = (
 				614AE3AB248420930065F226 /* MewsChatRow.swift */,
 				614AE3AD24842E490065F226 /* MewsChatView.swift */,
+				614AE3AF2484312F0065F226 /* MewsDetailView.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				614AE3972483F7DD0065F226 /* Color+Extensions.swift in Sources */,
 				614AE3952483F7BD0065F226 /* String+Extensions.swift in Sources */,
 				614AE37E2483F2620065F226 /* AppDelegate.swift in Sources */,
+				614AE3B02484312F0065F226 /* MewsDetailView.swift in Sources */,
 				614AE3802483F2620065F226 /* SceneDelegate.swift in Sources */,
 				614AE3822483F2620065F226 /* ContentView.swift in Sources */,
 				614AE39F248401890065F226 /* MewsPost.swift in Sources */,
