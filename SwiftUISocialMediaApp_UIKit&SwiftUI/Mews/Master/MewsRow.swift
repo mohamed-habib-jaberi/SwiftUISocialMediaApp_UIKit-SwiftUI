@@ -11,32 +11,39 @@ import Combine
 
 struct MewsRow: View {
     
-    var post: MewsPost
+    @ObservedObject var post: MewsPost
     
     var body: some View {
         
         NavigationLink(destination: MewsDetailView(post: post)) {
             
-            VStack(alignment: .leading) {
-                     Text(post.title)
-                         .font(.headline)
-                         .fontWeight(.bold)
-                         .padding(.top)
-                     
-                     Image(post.imageName)
-                         .resizable()
-                         .aspectRatio(contentMode: .fill)
-                         .cornerRadius(10)
-                         .frame( height: 220 )
-                     .clipped()
-                     
-                     MewsAuthorView(post: post)
-                         .padding(.bottom)
-                     
-                 }
+          VStack(alignment: .leading) {
+                Text(post.title)
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .padding(.top)
+                
+                Image(post.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fill)
+                    .cornerRadius(10)
+                    .frame( height: 220 )
+                    .clipped()
+                
+                HStack {
+                    MewsAuthorView(post: post)
+                      
+                    Picker("Reaction", selection: $post.reaction) {
+                        ForEach(Reaction.allCases, id: \.self) { reaction in
+                            
+                            Text(reaction.rawValue).tag(reaction)
+                        }
+                    }
+                .pickerStyle(SegmentedPickerStyle())
+                }
+                .padding(.bottom)
+            }
         }
-        
-     
     }
 }
 

@@ -15,7 +15,7 @@ enum Reaction: String, CaseIterable {
     case unsure = "😿"
     case shock = "🙀"
 }
-class MewsPost: Identifiable {
+class MewsPost: Identifiable, ObservableObject {
     var id = UUID()
     
     var imageName: String
@@ -26,9 +26,9 @@ class MewsPost: Identifiable {
     var author: User
     var chats: [Chat]
     
-    var isLiked = false
+   @Published var isLiked = false
     
-    var reaction: Reaction
+   @Published var reaction: Reaction
     
     init(
    imageName: String,
