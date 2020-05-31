@@ -16,6 +16,9 @@
 		614AE3952483F7BD0065F226 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3942483F7BD0065F226 /* String+Extensions.swift */; };
 		614AE3972483F7DD0065F226 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3962483F7DD0065F226 /* Color+Extensions.swift */; };
 		614AE3992483F8070065F226 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3982483F8070065F226 /* Date+Extensions.swift */; };
+		614AE39B2483F8800065F226 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE39A2483F8800065F226 /* User.swift */; };
+		614AE39D2483FFBD0065F226 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE39C2483FFBD0065F226 /* Chat.swift */; };
+		614AE39F248401890065F226 /* MewsPost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE39E248401890065F226 /* MewsPost.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		614AE3942483F7BD0065F226 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		614AE3962483F7DD0065F226 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
 		614AE3982483F8070065F226 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		614AE39A2483F8800065F226 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		614AE39C2483FFBD0065F226 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
+		614AE39E248401890065F226 /* MewsPost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsPost.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,9 @@
 		614AE3922483F7670065F226 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				614AE39A2483F8800065F226 /* User.swift */,
+				614AE39C2483FFBD0065F226 /* Chat.swift */,
+				614AE39E248401890065F226 /* MewsPost.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,7 +185,10 @@
 				614AE37E2483F2620065F226 /* AppDelegate.swift in Sources */,
 				614AE3802483F2620065F226 /* SceneDelegate.swift in Sources */,
 				614AE3822483F2620065F226 /* ContentView.swift in Sources */,
+				614AE39F248401890065F226 /* MewsPost.swift in Sources */,
+				614AE39D2483FFBD0065F226 /* Chat.swift in Sources */,
 				614AE3992483F8070065F226 /* Date+Extensions.swift in Sources */,
+				614AE39B2483F8800065F226 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
