@@ -10,7 +10,7 @@ import SwiftUI
 
 struct MewsDetailView: View {
     
-    var post: MewsPost
+   @ObservedObject var post: MewsPost
     
     @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
     
@@ -37,6 +37,7 @@ struct MewsDetailView: View {
                             .frame(minWidth: 0, idealWidth: proxy.size.width, minHeight: 200, maxHeight: 300)
                             .padding([.leading, .trailing])
                     }
+                    MewsSocialView(post: self.post)
                 }
                 
                  MewsChatView(chats: self.post.chats)

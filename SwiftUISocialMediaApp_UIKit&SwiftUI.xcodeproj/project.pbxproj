@@ -25,6 +25,7 @@
 		614AE3AC248420930065F226 /* MewsChatRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3AB248420930065F226 /* MewsChatRow.swift */; };
 		614AE3AE24842E490065F226 /* MewsChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3AD24842E490065F226 /* MewsChatView.swift */; };
 		614AE3B02484312F0065F226 /* MewsDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3AF2484312F0065F226 /* MewsDetailView.swift */; };
+		614AE3B2248441E20065F226 /* MewsSocialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3B1248441E20065F226 /* MewsSocialView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		614AE3AB248420930065F226 /* MewsChatRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsChatRow.swift; sourceTree = "<group>"; };
 		614AE3AD24842E490065F226 /* MewsChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsChatView.swift; sourceTree = "<group>"; };
 		614AE3AF2484312F0065F226 /* MewsDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsDetailView.swift; sourceTree = "<group>"; };
+		614AE3B1248441E20065F226 /* MewsSocialView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MewsSocialView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 				614AE37D2483F2620065F226 /* AppDelegate.swift */,
 				614AE37F2483F2620065F226 /* SceneDelegate.swift */,
 				614AE3812483F2620065F226 /* ContentView.swift */,
+				614AE3B1248441E20065F226 /* MewsSocialView.swift */,
 				614AE3832483F2690065F226 /* Assets.xcassets */,
 				614AE3882483F2690065F226 /* LaunchScreen.storyboard */,
 				614AE38B2483F2690065F226 /* Info.plist */,
@@ -223,6 +226,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				614AE3A5248417A80065F226 /* MewsRow.swift in Sources */,
+				614AE3B2248441E20065F226 /* MewsSocialView.swift in Sources */,
 				614AE3972483F7DD0065F226 /* Color+Extensions.swift in Sources */,
 				614AE3952483F7BD0065F226 /* String+Extensions.swift in Sources */,
 				614AE37E2483F2620065F226 /* AppDelegate.swift in Sources */,
