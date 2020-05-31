@@ -14,23 +14,29 @@ struct MewsRow: View {
     var post: MewsPost
     
     var body: some View {
-        VStack(alignment: .leading) {
-            Text(post.title)
-                .font(.headline)
-                .fontWeight(.bold)
-                .padding(.top)
+        
+        NavigationLink(destination: MewsDetailView(post: post)) {
             
-            Image(post.imageName)
-                .resizable()
-                .aspectRatio(contentMode: .fill)
-                .cornerRadius(10)
-                .frame( height: 220 )
-            .clipped()
-            
-            MewsAuthorView(post: post)
-                .padding(.bottom)
-            
+            VStack(alignment: .leading) {
+                     Text(post.title)
+                         .font(.headline)
+                         .fontWeight(.bold)
+                         .padding(.top)
+                     
+                     Image(post.imageName)
+                         .resizable()
+                         .aspectRatio(contentMode: .fill)
+                         .cornerRadius(10)
+                         .frame( height: 220 )
+                     .clipped()
+                     
+                     MewsAuthorView(post: post)
+                         .padding(.bottom)
+                     
+                 }
         }
+        
+     
     }
 }
 
