@@ -10,7 +10,17 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        
+        TabView{
+            MewsListView()
+                .tabItem {
+                    VStack{
+                        Image(systemName: "square.stack.fill")
+                            .renderingMode(.original)
+                        Text(verbatim: "Mews")
+                    }
+            }
+        }.tag(1)
     }
 }
 
