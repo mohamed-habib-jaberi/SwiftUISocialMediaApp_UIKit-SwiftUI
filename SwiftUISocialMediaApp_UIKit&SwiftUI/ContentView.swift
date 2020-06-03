@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         
         TabView{
@@ -19,8 +20,17 @@ struct ContentView: View {
                             .renderingMode(.original)
                         Text(verbatim: "Mews")
                     }
-            }
-        }.tag(1)
+            }.tag(1)
+            
+            SettingsView()
+                .tabItem {
+                    VStack {
+                        Image(systemName: "gear")
+                            .renderingMode(.original)
+                        Text(verbatim: "Settings")
+                    }
+            }.tag(4)
+        }
     }
 }
 

@@ -30,6 +30,10 @@
 		614AE3B92485947C0065F226 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3B82485947C0065F226 /* SettingsModel.swift */; };
 		614AE3BB2485978B0065F226 /* PetPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3BA2485978B0065F226 /* PetPreferences.swift */; };
 		614AE3BD248599770065F226 /* InsuranceOrder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3BC248599770065F226 /* InsuranceOrder.swift */; };
+		614AE3BF24859A5C0065F226 /* TemperatureRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3BE24859A5C0065F226 /* TemperatureRow.swift */; };
+		614AE3C124859AA90065F226 /* PetReplacementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3C024859AA90065F226 /* PetReplacementRow.swift */; };
+		614AE3C324859C3B0065F226 /* PetInsuranceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3C224859C3B0065F226 /* PetInsuranceRow.swift */; };
+		614AE3C524859CC00065F226 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3C424859CC00065F226 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		614AE3B82485947C0065F226 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
 		614AE3BA2485978B0065F226 /* PetPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetPreferences.swift; sourceTree = "<group>"; };
 		614AE3BC248599770065F226 /* InsuranceOrder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InsuranceOrder.swift; sourceTree = "<group>"; };
+		614AE3BE24859A5C0065F226 /* TemperatureRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TemperatureRow.swift; sourceTree = "<group>"; };
+		614AE3C024859AA90065F226 /* PetReplacementRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetReplacementRow.swift; sourceTree = "<group>"; };
+		614AE3C224859C3B0065F226 /* PetInsuranceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInsuranceRow.swift; sourceTree = "<group>"; };
+		614AE3C424859CC00065F226 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +194,10 @@
 		614AE3B5248594030065F226 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				614AE3BE24859A5C0065F226 /* TemperatureRow.swift */,
+				614AE3C024859AA90065F226 /* PetReplacementRow.swift */,
+				614AE3C224859C3B0065F226 /* PetInsuranceRow.swift */,
+				614AE3C424859CC00065F226 /* SettingsView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -261,15 +273,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				614AE3BF24859A5C0065F226 /* TemperatureRow.swift in Sources */,
 				614AE3B92485947C0065F226 /* SettingsModel.swift in Sources */,
 				614AE3A5248417A80065F226 /* MewsRow.swift in Sources */,
+				614AE3C124859AA90065F226 /* PetReplacementRow.swift in Sources */,
 				614AE3B2248441E20065F226 /* MewsSocialView.swift in Sources */,
 				614AE3BD248599770065F226 /* InsuranceOrder.swift in Sources */,
 				614AE3972483F7DD0065F226 /* Color+Extensions.swift in Sources */,
 				614AE3952483F7BD0065F226 /* String+Extensions.swift in Sources */,
 				614AE3B72485943B0065F226 /* HumanPet.swift in Sources */,
+				614AE3C524859CC00065F226 /* SettingsView.swift in Sources */,
 				614AE37E2483F2620065F226 /* AppDelegate.swift in Sources */,
 				614AE3B02484312F0065F226 /* MewsDetailView.swift in Sources */,
+				614AE3C324859C3B0065F226 /* PetInsuranceRow.swift in Sources */,
 				614AE3802483F2620065F226 /* SceneDelegate.swift in Sources */,
 				614AE3822483F2620065F226 /* ContentView.swift in Sources */,
 				614AE39F248401890065F226 /* MewsPost.swift in Sources */,
