@@ -10,6 +10,8 @@ import SwiftUI
 
 struct SettingsView: View {
     
+    @EnvironmentObject var petPreference: PetPreferences
+    
     private let coverageLevels = ["'They'll Live'", "'They Can Stay'", "'9 Lives'"]
     
     @State private var insuranceOrder = InsuranceOrder()
@@ -48,7 +50,7 @@ struct SettingsView: View {
                 }
                 
                 Section {
-                    PetReplacementRow()
+                    PetReplacementRow(selectedOwnerIndex: $petPreference.selectedPetIndex)
                         .accessibility(label: Text(verbatim: "Pet Replacement Selection"))
                 }
             }
