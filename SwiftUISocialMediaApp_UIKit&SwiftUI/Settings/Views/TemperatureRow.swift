@@ -20,8 +20,11 @@ struct TemperatureRow: View {
             
             if $settings.isTemperatureControlActive.wrappedValue {
                 Text(verbatim: "Set Temperature")
+                
                 Text(verbatim: "Desired Temperature \(formatted(temperature: $settings.desiredTemperature.wrappedValue))°F")
+                
                 Slider(value: $settings.desiredTemperature, in: (1...120))
+                    .accessibility(value: Text("Temperature value \($settings.desiredTemperature.wrappedValue) degree fahrenheit"))
             }
         }
     }

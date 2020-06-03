@@ -27,8 +27,12 @@ struct SettingsView: View {
                     if !insuranceOrder.hasUpgraded {
                         Toggle(isOn: $settings.isInsuranceRequired) {
                             Text(verbatim: "Is insurance required?")
+                          
                         }
+                        
                         if settings.isInsuranceRequired {
+                            PetInsuranceRow(settings: $settings, insuranceOrder: $insuranceOrder)
+                                .accessibility(label: Text("Pet Insurance Selection"))
                             
                             DatePicker(selection: $insuranceOrder.fromDate) {
                                 Text(verbatim: "Cover Start Date")

@@ -13,17 +13,26 @@ struct PetInsuranceRow: View {
       private let coverageLevels = ["'They'll Live'", "'They Can Stay'", "'9 Lives'"]
     
       @Binding var settings: SettingsModel
+      @Binding var insuranceOrder: InsuranceOrder
     
     var body: some View {
     
         VStack {
              VStack {
-               Text(verbatim: "Coverage Level:")
-               
+               Text(verbatim: "Coverage Level: \(comment(for: insuranceOrder.coverageLevel))")
+                .font(Font.system(size: 22, design: .rounded))
+                .foregroundColor(Color.myGreen)
+                .padding()
+                
+               Slider(value: $insuranceOrder.coverageLevel, in: (0...100))
+                                         .padding()
+                .accessibility(value: Text("\(comment(for: insuranceOrder.coverageLevel)) coverage"))
              }
              
              Button(action: {
-               
+                withAnimation {
+                    self.insuranceOrder.hasUpgraded.toggle()
+                }
              }) {
                Text(verbatim: "Place Order")
                  .font(Font.system(size: 22, design: .rounded))
