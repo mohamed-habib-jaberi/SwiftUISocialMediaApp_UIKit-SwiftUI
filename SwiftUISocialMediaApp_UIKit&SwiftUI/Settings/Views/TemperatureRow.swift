@@ -9,8 +9,21 @@
 import SwiftUI
 
 struct TemperatureRow: View {
+    
+    @Binding var settings : SettingsModel
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack{
+            Toggle(isOn: $settings.isTemperatureControlActive) {
+                Text(verbatim: "Active Home Heating Override")
+            }
+            
+            if $settings.isTemperatureControlActive.wrappedValue {
+                Text(verbatim: "Set Temperature")
+                Text(verbatim: "Desired Temperature \(formatted(temperature: $settings.desiredTemperature.wrappedValue))°F")
+                Slider(value: $settings.desiredTemperature, in: (1...120))
+            }
+        }
     }
 }
 
@@ -21,7 +34,10 @@ extension TemperatureRow {
     }
 }
 struct TemperatureRow_Previews: PreviewProvider {
+    
+    static var settingsModels = SettingsModel(isInsuranceRequired: false, isTemperatureControlActive: true, desiredTemperature: 22.5)
+    
     static var previews: some View {
-        TemperatureRow()
+        TemperatureRow(settings: .constant(settingsModels))
     }
 }

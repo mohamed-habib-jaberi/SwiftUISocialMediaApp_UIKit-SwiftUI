@@ -20,7 +20,7 @@ struct SettingsView: View {
         NavigationView{
             Form{
                 Section {
-                    TemperatureRow()
+                    TemperatureRow(settings: $settings)
                 }
                 
                 Section{
