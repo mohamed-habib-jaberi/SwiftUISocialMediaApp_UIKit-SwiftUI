@@ -22,6 +22,14 @@ struct ContentView: View {
                     }
             }.tag(1)
             
+            PetCareView()
+              .tabItem {
+                VStack {
+                  Image(systemName: "person.crop.circle")
+                    .renderingMode(.original)
+                  Text(verbatim: "PetCare")
+                }
+            }.tag(2)
             SettingsView()
                 .tabItem {
                     VStack {
@@ -29,7 +37,7 @@ struct ContentView: View {
                             .renderingMode(.original)
                         Text(verbatim: "Settings")
                     }
-            }.tag(4)
+            }.tag(3)
         }
     }
 }

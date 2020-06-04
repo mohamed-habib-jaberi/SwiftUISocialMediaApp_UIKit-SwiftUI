@@ -34,6 +34,13 @@
 		614AE3C124859AA90065F226 /* PetReplacementRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3C024859AA90065F226 /* PetReplacementRow.swift */; };
 		614AE3C324859C3B0065F226 /* PetInsuranceRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3C224859C3B0065F226 /* PetInsuranceRow.swift */; };
 		614AE3C524859CC00065F226 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 614AE3C424859CC00065F226 /* SettingsView.swift */; };
+		61F8B79824891A7B006CE592 /* PetStatusModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8B79724891A7B006CE592 /* PetStatusModel.swift */; };
+		61F8B79A24891B79006CE592 /* PetBioRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8B79924891B79006CE592 /* PetBioRow.swift */; };
+		61F8B79C24891DD8006CE592 /* MoodRectangleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8B79B24891DD8006CE592 /* MoodRectangleView.swift */; };
+		61F8B79E24891EAA006CE592 /* PetCareStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8B79D24891EAA006CE592 /* PetCareStatusView.swift */; };
+		61F8B7A024891F57006CE592 /* PetCareRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8B79F24891F57006CE592 /* PetCareRow.swift */; };
+		61F8B7A224892008006CE592 /* PetProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8B7A124892008006CE592 /* PetProfileImage.swift */; };
+		61F8B7A4248920AC006CE592 /* PetCareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61F8B7A3248920AC006CE592 /* PetCareView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +73,13 @@
 		614AE3C024859AA90065F226 /* PetReplacementRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetReplacementRow.swift; sourceTree = "<group>"; };
 		614AE3C224859C3B0065F226 /* PetInsuranceRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetInsuranceRow.swift; sourceTree = "<group>"; };
 		614AE3C424859CC00065F226 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		61F8B79724891A7B006CE592 /* PetStatusModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetStatusModel.swift; sourceTree = "<group>"; };
+		61F8B79924891B79006CE592 /* PetBioRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetBioRow.swift; sourceTree = "<group>"; };
+		61F8B79B24891DD8006CE592 /* MoodRectangleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodRectangleView.swift; sourceTree = "<group>"; };
+		61F8B79D24891EAA006CE592 /* PetCareStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCareStatusView.swift; sourceTree = "<group>"; };
+		61F8B79F24891F57006CE592 /* PetCareRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCareRow.swift; sourceTree = "<group>"; };
+		61F8B7A124892008006CE592 /* PetProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetProfileImage.swift; sourceTree = "<group>"; };
+		61F8B7A3248920AC006CE592 /* PetCareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCareView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +112,9 @@
 		614AE37C2483F2620065F226 /* SwiftUISocialMediaApp_UIKit&SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
-				614AE3B3248593AB0065F226 /* Settings */,
 				614AE3932483F77B0065F226 /* Extensions */,
+				61F8B79424891A23006CE592 /* PetCare */,
+				614AE3B3248593AB0065F226 /* Settings */,
 				614AE3A0248412FB0065F226 /* Mews */,
 				614AE37D2483F2620065F226 /* AppDelegate.swift */,
 				614AE37F2483F2620065F226 /* SceneDelegate.swift */,
@@ -202,6 +217,36 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		61F8B79424891A23006CE592 /* PetCare */ = {
+			isa = PBXGroup;
+			children = (
+				61F8B79524891A3D006CE592 /* Models */,
+				61F8B79624891A46006CE592 /* Views */,
+			);
+			path = PetCare;
+			sourceTree = "<group>";
+		};
+		61F8B79524891A3D006CE592 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				61F8B79724891A7B006CE592 /* PetStatusModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		61F8B79624891A46006CE592 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				61F8B79924891B79006CE592 /* PetBioRow.swift */,
+				61F8B79B24891DD8006CE592 /* MoodRectangleView.swift */,
+				61F8B79D24891EAA006CE592 /* PetCareStatusView.swift */,
+				61F8B79F24891F57006CE592 /* PetCareRow.swift */,
+				61F8B7A124892008006CE592 /* PetProfileImage.swift */,
+				61F8B7A3248920AC006CE592 /* PetCareView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -277,15 +322,21 @@
 				614AE3B92485947C0065F226 /* SettingsModel.swift in Sources */,
 				614AE3A5248417A80065F226 /* MewsRow.swift in Sources */,
 				614AE3C124859AA90065F226 /* PetReplacementRow.swift in Sources */,
+				61F8B79824891A7B006CE592 /* PetStatusModel.swift in Sources */,
+				61F8B79E24891EAA006CE592 /* PetCareStatusView.swift in Sources */,
 				614AE3B2248441E20065F226 /* MewsSocialView.swift in Sources */,
 				614AE3BD248599770065F226 /* InsuranceOrder.swift in Sources */,
 				614AE3972483F7DD0065F226 /* Color+Extensions.swift in Sources */,
 				614AE3952483F7BD0065F226 /* String+Extensions.swift in Sources */,
+				61F8B7A4248920AC006CE592 /* PetCareView.swift in Sources */,
 				614AE3B72485943B0065F226 /* HumanPet.swift in Sources */,
+				61F8B7A024891F57006CE592 /* PetCareRow.swift in Sources */,
 				614AE3C524859CC00065F226 /* SettingsView.swift in Sources */,
+				61F8B79A24891B79006CE592 /* PetBioRow.swift in Sources */,
 				614AE37E2483F2620065F226 /* AppDelegate.swift in Sources */,
 				614AE3B02484312F0065F226 /* MewsDetailView.swift in Sources */,
 				614AE3C324859C3B0065F226 /* PetInsuranceRow.swift in Sources */,
+				61F8B7A224892008006CE592 /* PetProfileImage.swift in Sources */,
 				614AE3802483F2620065F226 /* SceneDelegate.swift in Sources */,
 				614AE3822483F2620065F226 /* ContentView.swift in Sources */,
 				614AE39F248401890065F226 /* MewsPost.swift in Sources */,
@@ -294,6 +345,7 @@
 				614AE3A32484132E0065F226 /* MewsAuthorView.swift in Sources */,
 				614AE3AE24842E490065F226 /* MewsChatView.swift in Sources */,
 				614AE3992483F8070065F226 /* Date+Extensions.swift in Sources */,
+				61F8B79C24891DD8006CE592 /* MoodRectangleView.swift in Sources */,
 				614AE3AC248420930065F226 /* MewsChatRow.swift in Sources */,
 				614AE3BB2485978B0065F226 /* PetPreferences.swift in Sources */,
 				614AE39B2483F8800065F226 /* User.swift in Sources */,
