@@ -12,29 +12,41 @@ struct PetCareView: View {
     
     @EnvironmentObject var petModel: PetPreferences
     
+    @Environment(\.verticalSizeClass) var verticalSizeClass: UserInterfaceSizeClass?
+    
     @State private var isPresented = false
     
     var body: some View {
         NavigationView {
             
-            VStack {
-                VStack(alignment: .center) {
-                    PetProfileImage(humanPet: petModel.selectedPet)
+            if verticalSizeClass == .regular {
+                
+                VStack {
+                    VStack(alignment: .center) {
+                        PetProfileImage(humanPet: petModel.selectedPet)
+                        
+                        Text(petModel.selectedPet.name)
+                            .font(Font.system(size: 32, design: .rounded))
+                            .foregroundColor(.myGreen)
+                    }
                     
-                    Text(petModel.selectedPet.name)
-                        .font(Font.system(size: 32, design: .rounded))
-                        .foregroundColor(.myGreen)
+                    PetBioRow(hobbyText: petModel.selectedPet.favoriteHobby)
+                    
+                    PetCareRow(petModel: petModel.selectedPet)
                 }
+                .navigationBarTitle(Text(verbatim: "Pet Care"), displayMode: .inline)
                 
-                PetBioRow(hobbyText: petModel.selectedPet.favoriteHobby)
-                
-                PetCareRow(petModel: petModel.selectedPet)
+            }else{
+                HStack{
+                    PetProfileImage(humanPet: petModel.selectedPet)
+                                   PetCareRow(petModel: petModel.selectedPet)
+                                   .frame(width: 200)
+                }
+                    .navigationBarTitle(Text(verbatim: "Pet Care"), displayMode: .large)
             }
-            .navigationBarTitle(Text(verbatim: "Pet Care"), displayMode: .inline)
         }
     }
 }
-
 struct PetCareView_Previews: PreviewProvider {
     static var previews: some View {
         PetCareView()
