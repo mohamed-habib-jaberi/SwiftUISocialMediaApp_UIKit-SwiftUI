@@ -14,10 +14,15 @@ struct PetCareStatusView: View {
     
     var body: some View {
         
-        HStack(alignment: .bottom) {
-            ForEach(self.petStatusModels) { model in
-                MoodRectangleView(mood: model.mood)
+         GeometryReader { proxy in
+            HStack(alignment: .bottom) {
+                ForEach(self.petStatusModels) { model in
+                    MoodRectangleView(mood: model.mood, height: proxy.size.height)
+                    
+                }
+               
             }
+        .padding()
         }
     }
 }
