@@ -13,6 +13,8 @@ struct PetCareRow: View {
     @State private var showMoods = false
     var petModel: HumanPet
     
+   
+    
     var body: some View {
          VStack(alignment: .center, spacing: 10) {
              
@@ -32,6 +34,8 @@ struct PetCareRow: View {
                    .scaleEffect(showMoods ? 1.5 : 1)
                    .padding()
                }
+                PetCareStatusView(petStatusModels: petModel.moods)
+                .padding()
              }
            }
     }
